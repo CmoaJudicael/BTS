@@ -1,0 +1,205 @@
+<!-- début du code -->
+<div id="map">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <img id="img-back" src="https://lesbouchersberrichons.fr/wp-content/uploads/2022/03/Map-Fourniseur-V3.webp" alt="Map-Fourniseur">
+    
+    <div class="pos-relative flex column" id="filtre">
+        
+            <div class="flex alignItem-center">
+                <img class="logo-filtre" alt="logo"><label class="label-beige typo-color-beige monserrat-font .ft-size-1em">BOEUF</label>
+                
+                <div class="_switchContainer">
+                <label class="_switch" id="Activation" >
+                <input class="filtres" type="checkbox" name="boeuf" value="on" onclick="actualisation()" checked>
+                <span class="_slider round"></span>
+                </label>
+                </div>
+            </div>
+
+            <div class="flex alignItem-center">
+                <img class="logo-filtre" alt="logo">
+                <label class="label-beige typo-color-beige monserrat-font .ft-size-1em">VOLAILLE</label>
+                <div class="_switchContainer">
+                <label class="_switch" id="Activation" >
+                    <input class="filtres" type="checkbox" name="volaille" value="on" onclick="actualisation()" checked>
+                    <span class="_slider round"></span>
+                </label>
+                </div>
+
+            </div>
+            
+            <div class="flex alignItem-center">
+                <img class="logo-filtre" alt="logo">
+                <label class="label-beige typo-color-beige monserrat-font .ft-size-1em">PORC</label>
+                <div class="_switchContainer">
+                <label class="_switch" id="Activation" >
+                    <input class="filtres" type="checkbox" name="porc" value="on" onclick="actualisation()" checked>
+                    <span class="_slider round"></span>
+                </label>
+                </div>
+
+            </div>
+            <div class="flex alignItem-center">
+                <img class="logo-filtre" alt="logo">
+                <label class="label-beige typo-color-beige monserrat-font .ft-size-1em">EPICERIE</label>
+                <div class="_switchContainer">
+                <label class="_switch" id="Activation" >
+                    <input class="filtres" type="checkbox" name="epicerie" value="on" onclick="actualisation()" checked>
+                    <span class="_slider round"></span>
+                </label>
+                </div>
+
+            </div>
+            
+            <div class="flex alignItem-center">
+                    <img class="logo-filtre" alt="logo">
+                    <label class="label-beige typo-color-beige monserrat-font .ft-size-1em">FROMAGE</label>
+                <div class="_switchContainer">
+                <label class="_switch" id="Activation" >
+                    <input class="filtres" type="checkbox" name="fromage" value="on" onclick="actualisation()" checked>
+                    <span class="_slider round"></span>
+                </label>
+                </div>
+            
+
+            </div>
+            <div class="flex alignItem-center">
+                    <img class="logo-filtre" alt="logo">
+                    <label class="label-beige typo-color-beige monserrat-font .ft-size-1em">VINS</label>
+                <div class="_switchContainer">
+                <label class="_switch" id="Activation" >
+                    <input class="filtres" type="checkbox" name="vins" value="on" onclick="actualisation()" checked>
+                    <span class="_slider round"></span>
+                </label>
+                </div>
+
+            </div>
+            
+            <div class="flex alignItem-center">
+                    <img class="logo-filtre" alt="logo">
+                    <label class="label-beige typo-color-beige monserrat-font .ft-size-1em">OEUFS/GRAINES</label>
+                <div class="_switchContainer">
+                <label class="_switch" id="Activation" >
+                    <input class="filtres" type="checkbox" name="oeufs_graines" value="on" onclick="actualisation()" checked>
+                    <span class="_slider round"></span>
+                </label>
+                </div>
+
+            </div>
+            
+            
+        
+        </div>
+    <div id="support_loupe" class="bg">
+        <div id="loupe">
+            
+        </div>
+
+    </div>
+  <!--bulle info-->
+  <section id="bulle_info" class="pos-absolute">
+    <h3 id="bulle_categorie" class=" typo-color-white monserrat-font">categorie</h3>
+    <h1 id="bulle_title" class=" typo-color-beige typo-bold monserrat-font">je suis le titre</h1>
+    <h2 id="bulle_subtitle" class=" typo-color-beige monserrat-font">je suis un sous-titre</h2>
+  </section>
+  <!-- image logo -->
+   <!--poulet-->
+   <div class="pos-absolute volaille logo"  onclick="location.href='#fournisseur_0';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--0-->
+
+    <img class="img_logo" alt="logo-volaille">
+    </div>
+   <!--epicerie-->
+   <div class="pos-absolute epicerie logo"  onclick="location.href='#fournisseur_1';"onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--1-->
+    <img class=" img_logo" alt="logo-épicerie">
+    </div>
+
+    <div class="pos-absolute epicerie logo"  onclick="location.href='#fournisseur_2';"onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--2-->
+    <img class=" img_logo" alt="logo-épicerie">
+        </div>
+
+    <div class="pos-absolute epicerie logo"  onclick="location.href='#fournisseur_3';"onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--3-->
+    <img class=" img_logo" alt="logo-épicerie">
+        </div>
+
+    <div class="pos-absolute epicerie logo"  onclick="location.href='#fournisseur_4';"onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--4-->
+    <img class=" img_logo" alt="logo-épicerie">
+        </div>
+
+    <div class="pos-absolute epicerie logo" onclick="location.href='#fournisseur_5';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--5-->
+    <img class=" img_logo" alt="logo-épicerie">
+        </div>
+
+    <div class="pos-absolute epicerie logo"  onclick="location.href='#fournisseur_6';"onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--6-->
+    <img class=" img_logo" alt="logo-épicerie">
+        </div>
+
+    <div class="pos-absolute epicerie logo"  onclick="location.href='#fournisseur_7';"onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--7-->
+    <img class=" img_logo" alt="logo-épicerie">
+        </div>
+
+    <div class="pos-absolute epicerie logo"  onclick="location.href='#fournisseur_8';"onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--8-->
+    <img class=" img_logo" alt="logo-épicerie">
+        </div>
+
+    <div class="pos-absolute fromage logo"  onclick="location.href='#fournisseur_9';"onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--9-->
+    <img class=" img_logo" alt="logo-fromage">
+        </div>
+
+    <div class="pos-absolute fromage logo"  onclick="location.href='#fournisseur_10';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--10-->
+    <img class=" img_logo" alt="logo-fromage">
+        </div>
+
+    <div class="pos-absolute fromage logo"  onclick="location.href='#fournisseur_11';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--11-->
+    <img class=" img_logo" alt="logo-fromage">
+        </div>
+    <div class="pos-absolute oeufs_graines logo"  onclick="location.href='#fournisseur_12';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--12-->
+    <img class=" img_logo" alt="logo-oeuf-graine">
+        </div>
+
+    <div class="pos-absolute oeufs_graines logo"  onclick="location.href='#fournisseur_13';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--13-->
+    <img class=" img_logo" alt="logo-oeuf-graine">
+        </div>
+
+    <div class="pos-absolute boeuf logo"  onclick="location.href='#fournisseur_14';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--14-->
+    <img class=" img_logo" alt="logo-boeuf">
+        </div>
+    <div class="pos-absolute boeuf logo"  onclick="location.href='#fournisseur_15';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--15-->
+    <img class=" img_logo" alt="logo-boeuf">
+        </div>
+    <div class="pos-absolute boeuf logo"  onclick="location.href='#fournisseur_16';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--16-->
+    <img class=" img_logo" alt="logo-boeuf">
+        </div>
+    <div class="pos-absolute boeuf logo"  onclick="location.href='#fournisseur_17';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--17-->
+    <img class=" img_logo" alt="logo-boeuf">
+        </div>
+    <div class="pos-absolute boeuf logo"  onclick="location.href='#fournisseur_18';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--18-->
+    <img class=" img_logo" alt="logo-veau">
+        </div>
+    <div class="pos-absolute porc logo"  onclick="location.href='#fournisseur_19';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--19-->
+    <img class=" img_logo" alt="logo-porc">
+        </div>
+    <div class="pos-absolute vins logo"  onclick="location.href='#fournisseur_20';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--20-->
+    <img class=" img_logo" alt="logo-vins">
+        </div>
+    <div class="pos-absolute vins logo"  onclick="location.href='#fournisseur_21';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--21-->
+    <img class=" img_logo" alt="logo-vins">
+        </div>
+    <div class="pos-absolute vins logo"  onclick="location.href='#fournisseur_22';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--22-->
+    <img class=" img_logo" alt="logo-vins">
+        </div>
+    <div class="pos-absolute vins logo"  onclick="location.href='#fournisseur_23';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--23-->
+    <img class=" img_logo" alt="logo-vins">
+        </div>
+    <div class="pos-absolute vins logo"  onclick="location.href='#fournisseur_24';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--24-->
+    <img class=" img_logo" alt="logo-vins">
+        </div>
+    <div class="pos-absolute vins logo"  onclick="location.href='#fournisseur_25';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--25-->
+    <img class=" img_logo" alt="logo-vins">
+        </div>
+    <div class="pos-absolute vins logo"  onclick="location.href='#fournisseur_26';" onmouseover="info_show(this)" onmouseout="info_hide(this)"><!--26-->
+    <img class=" img_logo" alt="logo-vins">
+        </div>
+    
+</div>

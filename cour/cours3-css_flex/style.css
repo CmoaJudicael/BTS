@@ -1,0 +1,80 @@
+.conteneur-flexible
+{
+    align-items: flex-end;
+    display: flex;
+    margin: 1% 0%;
+    background-color: #0ad;
+    border: 2px solid blue;
+    font-size: 20px;
+}
+.element-flexible
+{
+    margin: 5px;
+    padding: 10px;
+    background-color: #0da;
+    border: 2px solid green;
+    width: 25%;
+    height: 25%;
+    text-align: center;
+}
+.ligne
+{
+flex-direction: row;
+justify-content: center;
+}
+.ligne-inverse
+{
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.colonne
+{
+flex-direction: column;
+justify-content: center;
+}
+.colonne-inverse
+{
+flex-direction: column-reverse;
+justify-content: center;
+
+}
+.wrap
+{
+    /*flex-wrap: nowrap;/*valeur par défaut*/
+    flex-wrap: wrap;
+}
+.wrap-reverse
+{
+    flex-wrap: wrap-reverse;
+}
+.modification_hauteur
+{
+    height: 1500px;
+}
+
+
+/* 
+C'est sur l'élément parent que je change la propriété display en lui associant la valeur flex afin de pouvoir utiliser toutes les propriétés merveilleuse du modèle Flexbox.
+Donc mon élément parent devient ce qu'on appelle communément un container ou flex container.
+et dans cet élément parent (flex container) tous mes élément enfants deviennent des éléments ou items flex (ou items flexibles)
+en fonction de si mon élément est un container flex ou un item flex, je pourrai manipuler différentes propriétés des flexbox
+
+tout container flex est une boîte 
+1/ un axe principal
+2/ un axe secondaire
+
+la propriété justify-content est celle qui place les items sur l'axe principale
+la propriété align-items est celle qui place les items sur l'axe principale
+la direction des items et comment mes items sont distribués sur mes axes
+Mes axes (sec et prin) sont déterminés par la valeur de flex-direction.
+
+flex-direction : row = mon axe principale est une ligne, son début est à gauche et sa fin est à droite.
+
+flex-direction : row-reverse = mon axe principale est une ligne, son début est à droite et sa fin est à gauche.
+
+
+flex-direction : column = mon axe principale est une colonne, son début est en haut et sa fin est en bas.
+
+
+flex-direction : column-reverse = mon axe principale est une colonne, son début est en bas et sa fin est en haut.
+*/

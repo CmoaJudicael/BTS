@@ -1,0 +1,155 @@
+.label-beige
+{
+    width: 90%;
+}
+.ft-size-1em
+{
+  font-size: 1em;
+}
+.monserrat-font
+{
+  font-family: 'Montserrat', sans-serif;
+}
+#bulle_info
+{
+  visibility: hidden;
+  top: 50px;
+	width:30%;
+	right:30px;
+	height:50%;
+}
+.typo-color-beige
+{
+  color: #BD9C69;
+}
+.typo-color-white
+{
+  color: #FFFFFF;
+}
+.typo-bold
+{
+  font-weight: bold;
+}
+.flex
+{
+    display: flex;
+}
+.alignItem-center
+{
+	align-items:center;
+}
+.column
+{
+    flex-direction: column;
+}
+#filtre
+{
+    width:20%
+}
+.logo-filtre
+{
+	margin-right:3%;
+}
+.pos-absolute
+{
+    position: absolute;
+} 
+.pos-relative
+{
+    position: relative;
+} 
+.logo, .img_logo , .logo-filtre
+{
+    width: 3vh;
+    border-radius: 50%;
+}
+.logo:hover
+{
+    z-index: 12;
+}
+.link:hover>img
+{
+    transform: scale(1.3);
+    border: #BD9C69 0.3vh solid;
+}
+.transition
+{
+    transition: all 0.2s;
+}
+.bg:hover 
+{
+    transform: scale(2);
+    transition: all 0.4s;
+    z-index: 10;
+    border: #BD9C69 0.2vh solid;
+}
+.bg
+{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #2d2d2d;
+}
+
+/*switch*/
+/* The switch - the box around the slider */
+._switchContainer {
+    position: relative;
+    display: inline-block;
+    width: 3vh;
+    height: 2vh;
+  }
+  
+  /* Hide default HTML checkbox */
+  ._switchContainer input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  ._slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  ._slider:before {
+    position: absolute;
+    content: "";
+    height: 2vh;
+    width: 2vh;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + ._slider 
+  {
+    background-color: #BD9C69;
+  }
+  
+  input:focus + ._slider 
+  {
+    box-shadow: 0 0 1px #BD9C69;
+  }
+  
+  input:checked + ._slider:before {
+    -webkit-transform: translateX(1.5vh);
+    -ms-transform: translateX(1.5vh);
+    transform: translateX(1.5vh);
+  }
+  
+  /* Rounded sliders */
+  ._slider.round {
+    border-radius: 34px;
+  }
+  
+  ._slider.round:before {
+    border-radius: 50%;
+  }

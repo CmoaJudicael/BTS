@@ -1,0 +1,57 @@
+.conteneur-flexible
+{
+    display: flex;
+    font-size: 20px;
+    background-color: aqua;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    margin: 10px 0;
+    height: 100px;
+
+}
+.element-flexible
+{
+    width: 25%;
+    background-color: blueviolet;
+    text-align: center;
+    border: 2px solid green;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 10px;
+    flex: 0 0 10px;
+}
+.ligne
+{
+    /*flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow est la propriété racourcie de flex-direction et de flex-wrap
+    */
+    flex-flow: row wrap;
+}
+.strech-sec
+{
+    align-items: stretch;
+}
+.debut-sec
+{
+    align-items: flex-start;
+}
+.fin-sec
+{
+    align-items: flex-end;
+}
+.petit
+{
+    padding: 0;
+}
+.centre-sec
+{
+    align-items: center;
+}
+.baselin-sec
+{
+    align-items: baseline;
+}
+/*
+order est une propriété flexbox qui s'applique à un élément ou item flexible qui permet de déplacer l'item sur l'axe principale et donc quil "prenne la place" d'un autre item (visuellement).
+*/

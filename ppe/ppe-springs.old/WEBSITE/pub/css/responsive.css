@@ -1,0 +1,59 @@
+/* responsive Mobile*/
+@media only screen and (max-width: 850px) 
+{
+    /** header & footer*/
+    header
+    {
+        width: auto;
+    }
+    header>img
+    {
+        visibility: collapse;
+    }
+    /*Page Login*/
+    #main>img
+    {
+        visibility: collapse;
+    }
+    #logCaseForm
+    {
+        width: 100%;
+        height: 100%;
+        background-color: #dfe6ed;
+        margin: 0%;
+    }
+    #LogCase
+    {
+        justify-content: center;
+    }
+    .top
+    {
+        justify-content: center;
+    }
+    
+}
+@media only screen and (max-width: 950px) 
+{
+    /** header & footer*/
+    header
+    {
+        width: auto;
+    }
+    /*Page Login*/
+    #logCaseForm
+    {
+        width: 100%;
+        height: 100%;
+        background-color: #dfe6ed;
+        margin: 0%;
+    }
+    #LogCase
+    {
+        justify-content: center;
+    }
+    .top
+    {
+        justify-content: center;
+    }
+    
+}

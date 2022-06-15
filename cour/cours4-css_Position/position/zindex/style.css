@@ -1,0 +1,33 @@
+p
+{
+    background-color: blueviolet;
+}
+.carre
+{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+.bleu
+{
+    background-color: blue;
+}
+.vert
+{
+    background-color: green;
+}
+.relatif
+{
+    position: relative;
+}
+.decale
+{
+    right: 75px;
+    top: 25px;
+}
+.z100
+{
+    z-index: 2;
+}
+

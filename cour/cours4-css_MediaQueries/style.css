@@ -1,0 +1,54 @@
+body
+{
+    background-color: red;
+}
+.container
+{
+    background-color: #99f;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.element-flex
+{
+    background-color: #fc8;
+    height: 50px;
+    margin: 10px;
+    flex: 0 1 20%;
+}
+/* Imaginons que je veux changer l'aparence de mon site pous tous les apareils dont la largeur est inferieur à 780px
+
+une media query fonctionne avec 3 éléments
+1/ l'appel à la regle media => @media
+2/ le type de media (exemple : all ; screen ; print ; speech)
+3/ La ou les caractéristiques medias/*/
+@media screen and (max-width : 767px) 
+{
+    body
+    {
+        background-color: #848;
+
+    }
+    .container
+    {
+        background-color: red;
+    }
+    .element-flex
+    {
+        background-color: aquamarine;
+    }
+    
+}
+@media screen and (min-width : 100px) and (max-width : 479px) 
+{
+    body
+    {
+        background-color: #999;
+
+    }
+    .container
+    {
+        flex-flow: column;
+    }
+    
+}

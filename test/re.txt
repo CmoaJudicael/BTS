@@ -1,0 +1,51 @@
+
+    Société Guillet Volaille fermière du Maine et Loire  >  fournisseur_0
+    
+    Chips Bielsa28150 Boisville La Saint Pere  >  fournisseur_1
+    
+    Pâte FrançoisPÂTES BRISEE ET FEUILLETEE  >  fournisseur_2
+    
+    Le Rucher des Brosses1 Chemin Des Brousses Les Brosses 18110 Allogny  >  fournisseur_3
+    
+    Pâtes FabreRte de Villeneuve 18570 La Chapelle-Saint-Ursin  >  fournisseur_4
+    
+    Farine d’Oudon Dun sur AuronOudon 18130 Vornay  >  fournisseur_5
+    
+    Lentilles vertes du Berry1 Rue de Bois Griffon 18350 Cornusse  >  fournisseur_6
+    
+    Huilerie merollesLe Dom. de Mérolles 36260 Paudy  >  fournisseur_7
+    
+    Unité de Production Alimentaire du Loudunais12 Rue des Forges 86200 Loudun  >  fournisseur_8
+    
+    La Ferme de VillemenardVillemenard 18500 Vignoux-sur-Barangeon  >  fournisseur_9
+    
+    Ferme Billon Sabatier229 Sardonnet 18500 Allouis  >  fournisseur_10
+    
+    Le brebis du BerryLes Bruyères 18360 Saulzais-le-Potier  >  fournisseur_11
+    
+    Le Petit ChâtelierLe Châtelier 18400 Saint-Florent-sur-Cher  >  fournisseur_12
+    
+    CocoripopLa Villeneuve 18300 Feux  >  fournisseur_13
+    
+    Riotte Roland et NicolasBessy 18600 Sancoins  >  fournisseur_14
+    
+    Piot Hugues36400 Saint-Chartier  >  fournisseur_15
+    
+    Laboisse Yvon et BenoitLindron 03430 Sauvagny  >  fournisseur_16
+    
+    Pied ChétifPied Chétif 18120 Massay  >  fournisseur_17
+    
+    Allouetteau Monique et NicolasLe Breuil 18210 Coust  >  fournisseur_1
+    
+    Hassenforder et Fils SALe Beau Rosier 03000 Toulon-sur-Allier  >  fournisseur_19
+    
+Domaine Charpentier Reuilly et QuincyLe Bourdonnat 36260 Reuilly  >  fournisseur_20
+    
+Chateaumeillant : Domaine Rouze2 Ter Chem. des Vignes 18120 Quincy  >  fournisseur_21
+    
+    Brasserie de Tonton Fernand24 Rte du Paradis 18500 Mehun-sur-Yèvre  >  fournisseur_22
+    Sancerre : Domaine DelaporteRle de Chavignol 18300 Sancerre  >  fournisseur_23
+Coteaux du Giennois : Domaine Villargeau3 voie romaine Villargeau 58200 Pougny  >  fournisseur_24
+    
+    Domaine Fraiseau Leclerc3 Rue du Chat 18510 Menetou-Salon  >  fournisseur_25
+    Valencay : Domaine Morand65 Rue Gd Rue Champcol 41130 Selles-sur-Cher  >  fournisseur_26

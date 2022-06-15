@@ -1,0 +1,25 @@
+span.mobile_menu_bar:before
+{
+	width:32px;
+	height:32px;
+	background-color:#FCC600;
+	color: #28283F;
+	border-radius:50%;
+	animation-duration: 2s;
+  animation-name: glissement;
+  animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes glissement {
+  from {
+    margin-left: -10px;
+  }
+
+  to {
+    margin-left: -50px;
+  }
+}
+span.mobile_menu_bar:after
+{
+	animation:none;
+}

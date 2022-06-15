@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    html
+    {
+      background-color: #28283a;
+      cursor: url('https://mochaproduction.com/wp-content/uploads/2021/12/Rond-souris.png') 13 12,auto;
+    }
+    .typo
+    {
+	    color:#006698;
+	    font-family: arial narrow, sans-serif;
+	    font-size: 5em;
+	    line-height: 1.5;
+      
+    }
+  </style>
+  <script type="text/javascript">
+  
+  
+    var followCursor = (function() {
+      var s = document.createElement('div');
+      s.style.position = 'fixed';
+      s.style.margin = '0';
+      s.style.padding = '0px';
+      s.style.border = '2px solid #FCC600';
+      s.style.borderRadius = "50%";
+      s.style.width = "32px";
+      s.style.height = "32px";
+      s.style.zIndex = "9999";
+      s.style.pointerEvents='none';
+  
+    
+      return {
+        init: function() {
+          document.body.appendChild(s);
+        },
+    
+        run: function(e) {
+          var e = e || window.event;
+          s.style.left  = (e.clientX - 15) + 'px';
+          s.style.top = (e.clientY - 15) + 'px';
+        }
+      };
+    }());
+    
+    window.onload = function() {
+      followCursor.init();
+      document.body.onmousemove = followCursor.run;
+    }
+    
+    </script>
+</head>
+<body>  
+  <div id="BackContainer">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    <lottie-player id="svgContainer" src="https://assets3.lottiefiles.com/packages/lf20_ylk1jciv.json"  background="transparent"  speed="1"  style="width: 250px; height: 250px;"  loop autoplay></lottie-player>    
+         
+    </div>
+  
+<header>
+  <h1 class="typo">  Le concept</h1>
+  <a href="http://mochaproduction.com">mochaproduction</a>
+</header>
+<article>
+  <h1>effet css</h1>
+  <div id="bubulle">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+
+  </div>
+</article>
+
+<style>
+  /**/
+  #bubulle>div
+  {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:burlywood 3px solid;
+  }
+  @keyframes bulles
+  {
+    0%
+    {
+      
+    }
+  }
+</style>
+
+
+
+
+
+
+  <style type="text/css">
+  .zoom 
+  {
+    width: 900px;
+    height: 650px;
+    background-size: 900px auto;
+  }
+  .image img
+  {
+    width: 100%;
+    height: 100%;    
+  }
+  #loupe
+  {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: -600px;
+    right: -350px;
+    background-image: url('https://architecteconstructionmaison.fr/wp-content/uploads/2020/12/n2bb.jpg');
+    background-size: 900px auto;
+    background-position: bottom 260px right 540px;
+    
+  }
+  </style>
+  <div class=zoom>
+  <div class=image>
+  <img  src="https://architecteconstructionmaison.fr/wp-content/uploads/2020/12/n2bb.jpg" alt="Text de remplacement"/>
+  <div id="loupe" ></div>
+  </div>
+ </div>
+ <script>
+
+   loupe=document.getElementById("loupe");
+   loupe.onmouseover = function()
+   {
+     loupe.style.width="250px";
+     loupe.style.height="250px";
+     loupe.style.top="-650px";
+     loupe.style.right="-350px";
+     loupe.style.backgroundSize="1200px auto";
+     loupe.style.backgroundPosition="bottom 300px right 700px";
+     loupe.style.visibility= "visible";
+     loupe.style.transition= "all 2s";
+     loupe.style.backgroundImage=url('https://thumbs.dreamstime.com/z/isometric-view-furnished-house-d-illustration-residential-first-floor-plan-showing-living-room-dining-room-foyer-80804746.jpg');
+   };
+   loupe.onmouseout = function()
+   {
+     loupe.style.width="200px";
+     loupe.style.height="200px";
+     loupe.style.top="-600px";
+     loupe.style.right="-350px";
+     loupe.style.backgroundSize="900px auto";
+     loupe.style.backgroundPosition="bottom 260px right 540px";
+     loupe.style.visibility= "visible";
+     loupe.style.transition= "all 2s";
+     loupe.style.backgroundImage=url('https://architecteconstructionmaison.fr/wp-content/uploads/2020/12/n2bb.jpg');
+   };
+   
+   
+   
+  
+ </script>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dZHEbAbSn1M?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; loop;" allowfullscreen></iframe>
+</body>
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+  <div id="player"></div>
+
+  <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '390',
+        width: '640',
+        videoId: 'M7lc1UVf-VE',
+        playerVars: {
+          'playsinline': 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+      event.target.playVideo();
+    }
+
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done = false;
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING && !done) {
+        setTimeout(stopVideo, 6000);
+        done = true;
+      }
+    }
+    function stopVideo() {
+      player.stopVideo();
+    }
+  </script>
+
+</html>

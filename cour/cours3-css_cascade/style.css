@@ -1,0 +1,51 @@
+p
+{
+    color: red /* !important*/;
+    text-decoration: underline;
+}
+ul.petit
+{
+    font-size: 12px;
+}
+.biorange
+{
+    color: orange;
+    font-size: 24px;
+}
+#green
+{
+    color: green;
+}
+#yellow
+{
+    color: yellow;
+}
+/*en cas de conflit css : c'est à dire qu'une même propriété est définie de différentes manières dans le css (ex : via des sélecteurs html ou selecteurs de class ou selecteur d'id), il est important de comprendre comment fonctionne le principe d'héritage en css et quel sélecteur à la primauté sur lequel
+
+utilisation de l'attibut style directement sur un élément html > id > class > sélecteur html
+
+3 éléments vont déterminer l'ordre d'application d'un style sur un autre
+
+1/ la précision du selecteur
+2/ la présence du mot-clé !important
+3/ l'ordre des sélecteur 
+*/
+h1{
+    color: blue;
+}
+.petit
+{
+    font-size: 12px;
+}
+.grand
+{
+    font-size: 24px;
+}
+.bleu
+{
+    color: blue;
+}
+.orange
+{
+    color: orange;
+}

@@ -1,0 +1,50 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+
+}
+ul
+{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: coral;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0% 5%;
+    
+}
+ul :hover
+{
+    display: inline-block;
+    background-color: navajowhite;
+}
+li
+{
+    margin: 0% 2%;
+    list-style: none;
+    text-align: center;
+}
+a
+{
+    color: black;
+    text-decoration: none;
+
+}
+h1
+{
+    font-size: large;
+    font-weight: bold;
+    margin: 5%;
+}
+p
+{
+    margin: 5%;
+}
+footer
+{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}

@@ -1,0 +1,42 @@
+<style>
+    html
+{
+  cursor: url('https://mochaproduction.com/wp-content/uploads/2021/12/Rond-souris.png') 14 14,auto;
+}
+</style>
+
+
+<!-- script de la souris -->
+<script type="text/javascript">
+    var followCursor = (function() {
+      var s = document.createElement('div');
+      s.style.position = 'fixed';
+      s.style.margin = '0';
+      s.style.padding = '0px';
+      s.style.border = '2px solid #FCC600';
+      s.style.borderRadius = "50%";
+      s.style.width = "32px";
+      s.style.height = "32px";
+      s.style.zIndex = "99";
+      s.style.pointerEvents='none';
+  
+    
+      return {
+        init: function() {
+          document.body.appendChild(s);
+        },
+    
+        run: function(e) {
+          var e = e || window.event;
+          s.style.left  = (e.clientX - 14) + 'px';
+          s.style.top = (e.clientY - 14) + 'px';
+        }
+      };
+    }());
+    
+    window.onload = function() {
+      followCursor.init();
+      document.body.onmousemove = followCursor.run;
+    }
+    
+    </script>
